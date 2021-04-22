@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/projectSettingsUpdater.xml
+/modules.xml
+/.idea.FEB-FinalProject - Session 3.iml
+/contentModel.xml
+# Datasource local storage ignored files
+/../../../../../../:\Projects\FEB-FinalProject - Session 3\.idea\.idea.FEB-FinalProject - Session 3\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
