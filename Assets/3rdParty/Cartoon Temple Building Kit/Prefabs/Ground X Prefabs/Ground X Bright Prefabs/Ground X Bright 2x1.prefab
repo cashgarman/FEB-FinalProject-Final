@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4000012968704536}
   - component: {fileID: 33000013584586892}
   - component: {fileID: 23000011104285794}
+  - component: {fileID: -1393607590007684887}
   m_Layer: 0
   m_Name: Ground X Bright 2x1
   m_TagString: Untagged
@@ -82,3 +83,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-1393607590007684887
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000013575286486}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: bae7408427b901d4cb86856e8f7f5feb, type: 3}

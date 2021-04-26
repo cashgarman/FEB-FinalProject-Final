@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4000014069807804}
   - component: {fileID: 33000010997261744}
   - component: {fileID: 23000010783972846}
+  - component: {fileID: -5184234601487759723}
   m_Layer: 0
   m_Name: Idol 1
   m_TagString: Untagged
@@ -82,3 +83,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-5184234601487759723
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000012591900880}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 3a1d3020b389e374d846159123ec8e37, type: 3}

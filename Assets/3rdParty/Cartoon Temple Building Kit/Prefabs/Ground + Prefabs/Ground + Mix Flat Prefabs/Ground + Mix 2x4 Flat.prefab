@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4000013783646662}
   - component: {fileID: 33000013986764446}
   - component: {fileID: 23000011440880310}
+  - component: {fileID: 8702221308176573842}
   m_Layer: 0
   m_Name: Ground + Mix 2x4 Flat
   m_TagString: Untagged
@@ -82,3 +83,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8702221308176573842
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000012841735410}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: ae408dbc2c71b18469be80ca4b4ee322, type: 3}

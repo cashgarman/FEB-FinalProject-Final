@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4000011881824454}
   - component: {fileID: 33000012579094876}
   - component: {fileID: 23000012610848078}
+  - component: {fileID: -7759933894267586815}
   m_Layer: 0
   m_Name: Gate 4 Hallway x3
   m_TagString: Untagged
@@ -82,3 +83,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-7759933894267586815
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000013269325686}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 3d2f17137ce3da6469207010686d933f, type: 3}

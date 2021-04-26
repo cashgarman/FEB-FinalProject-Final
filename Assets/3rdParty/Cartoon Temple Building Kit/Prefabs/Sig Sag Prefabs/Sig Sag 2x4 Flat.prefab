@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4000010238439058}
   - component: {fileID: 33000012838832816}
   - component: {fileID: 23000010757230546}
+  - component: {fileID: -877848364964922962}
   m_Layer: 0
   m_Name: Sig Sag 2x4 Flat
   m_TagString: Untagged
@@ -82,3 +83,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-877848364964922962
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000011408290920}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: a78827f6729228048bddf2290608d47d, type: 3}

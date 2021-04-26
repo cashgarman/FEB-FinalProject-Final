@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4000010600033214}
   - component: {fileID: 33000011039272058}
   - component: {fileID: 23000010813436832}
+  - component: {fileID: 7235958912636959811}
   m_Layer: 0
   m_Name: Round Wide Hollow 1
   m_TagString: Untagged
@@ -82,3 +83,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &7235958912636959811
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000012301651410}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 1b7f1ce9e821e224c88a1bb254b41ef3, type: 3}

@@ -11,11 +11,19 @@ public class Grabber : MonoBehaviour
     private Grabbable touchedObject;
     private Grabbable grabbedObject;
 
-    public UnityEvent<GameObject> onObjectGrabbed;
-    public UnityEvent<GameObject> onObjectDropped;
+    public UnityEvent<GameObject, GameObject> onObjectGrabbed;
+    public UnityEvent<GameObject, GameObject> onObjectDropped;
+    [SerializeField] private Player _player;
 
     void Update()
     {
+        // If the player is stunned
+        if (_player.Stunned)
+        {
+            // Don't allow them to grab anything
+            return;
+        }
+        
         // If the grip button is pressed
         if (Input.GetButtonDown(gripInputName))
         {
@@ -32,7 +40,7 @@ public class Grabber : MonoBehaviour
                 grabbedObject = touchedObject;
 
                 // Trigger the object picked up event
-                onObjectGrabbed.Invoke(grabbedObject.gameObject);
+                onObjectGrabbed.Invoke(grabbedObject.gameObject, gameObject);
             }
         }
 
@@ -49,7 +57,7 @@ public class Grabber : MonoBehaviour
                 grabbedObject.OnDrop();
 
                 // Trigger the object picked up event
-                onObjectDropped.Invoke(grabbedObject.gameObject);
+                onObjectDropped.Invoke(grabbedObject.gameObject, gameObject);
 
                 // Reset the grabbed object
                 grabbedObject = null;
@@ -105,6 +113,22 @@ public class Grabber : MonoBehaviour
             // Reset the currently touched object
             // TODO: This will need more work when we have lots of object close together
             touchedObject = null;
+        }
+    }
+
+    public void ForceDrop()
+    {
+        // If we have a grabbed object
+        if (grabbedObject != null)
+        {
+            // Stop playing the gripped animation
+            GetComponent<Animator>().SetBool("Gripped", false);
+            
+            // Let the grabbed object know it's been dropped
+            grabbedObject.OnDrop();
+
+            // Reset the grabbed object
+            grabbedObject = null;
         }
     }
 }

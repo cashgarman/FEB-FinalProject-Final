@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4000010627492986}
   - component: {fileID: 33000013492631780}
   - component: {fileID: 23000012188987454}
+  - component: {fileID: 8010748637100148760}
   m_Layer: 0
   m_Name: Fence Dark Corner
   m_TagString: Untagged
@@ -82,3 +83,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8010748637100148760
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000012491849318}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 71dd2238ee2695749873f175c90d5448, type: 3}

@@ -12,13 +12,14 @@ public class Agent : MonoBehaviour
     {
         None,
         Idle,
+        Patrolling,
         DetectingPlayer,
         ChasingPlayer,
         MoveToLastKnownPlayerPosition,
         LookingForPlayer,
         ReturningHome,
         GrabbingArtifact,
-        ReturningArtifact,
+        ReturningArtifact
     }
 
     protected void GotoState(State newState)

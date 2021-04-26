@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4000012851860716}
   - component: {fileID: 33000014114029124}
   - component: {fileID: 23000014031777778}
+  - component: {fileID: 8412356754705564322}
   m_Layer: 0
   m_Name: Ground + Flat Bright 2x8
   m_TagString: Untagged
@@ -82,3 +83,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8412356754705564322
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000011495490180}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 66e4b863b460a30498b733004f1d6922, type: 3}

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4000011872380052}
   - component: {fileID: 33000012793970158}
   - component: {fileID: 23000013076205410}
+  - component: {fileID: 8109106017432452522}
   m_Layer: 0
   m_Name: Platform Fence 1x7x13
   m_TagString: Untagged
@@ -82,3 +83,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8109106017432452522
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000013817360766}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 6e8f7eea92333a04e9f433d3ae4dd760, type: 3}

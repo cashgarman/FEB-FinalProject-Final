@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4000010613338836}
   - component: {fileID: 33000013424694192}
   - component: {fileID: 23000011969246040}
+  - component: {fileID: 7692040509333681743}
   m_Layer: 0
   m_Name: Block 2x5
   m_TagString: Untagged
@@ -82,3 +83,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &7692040509333681743
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000010465144814}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 2fefb673f9bde9345a52fe9c6d73a40c, type: 3}

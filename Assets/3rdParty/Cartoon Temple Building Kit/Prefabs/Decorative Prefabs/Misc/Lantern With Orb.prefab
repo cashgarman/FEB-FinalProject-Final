@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 4000010863501412}
   - component: {fileID: 33000012647774888}
   - component: {fileID: 23000014124756176}
+  - component: {fileID: -6563083042623300673}
   m_Layer: 0
   m_Name: Lantern With Orb
   m_TagString: Untagged
@@ -165,3 +166,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-6563083042623300673
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000013598317750}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 05bac6d97fdc58743b7c6b0e8b7c0c9f, type: 3}

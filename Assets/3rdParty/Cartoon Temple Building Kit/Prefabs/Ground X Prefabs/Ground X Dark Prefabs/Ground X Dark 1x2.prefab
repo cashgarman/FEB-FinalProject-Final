@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4000013520584634}
   - component: {fileID: 33000013160416052}
   - component: {fileID: 23000011333527632}
+  - component: {fileID: 1261101294432852142}
   m_Layer: 0
   m_Name: Ground X Dark 1x2
   m_TagString: Untagged
@@ -82,3 +83,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1261101294432852142
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000013519684468}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: e44cfdae86be4a34fac61b804bb6b9c6, type: 3}

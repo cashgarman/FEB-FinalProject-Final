@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4000013318425676}
   - component: {fileID: 33000011344105070}
   - component: {fileID: 23000013059573830}
+  - component: {fileID: 4539266503046729213}
   m_Layer: 0
   m_Name: Ground X Mix Flat 4x1
   m_TagString: Untagged
@@ -82,3 +83,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4539266503046729213
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000012045292896}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 09e39b3d6e8718745b236d168d55de0a, type: 3}

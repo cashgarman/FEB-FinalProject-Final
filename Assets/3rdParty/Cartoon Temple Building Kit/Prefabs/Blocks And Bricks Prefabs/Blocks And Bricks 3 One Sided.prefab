@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4000012798508784}
   - component: {fileID: 33000011280911890}
   - component: {fileID: 23000010428173528}
+  - component: {fileID: 1277929897378562208}
   m_Layer: 0
   m_Name: Blocks And Bricks 3 One Sided
   m_TagString: Untagged
@@ -82,3 +83,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1277929897378562208
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000012790412816}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: f9ee77e7f78f9b74f877c4e1dbe3b26a, type: 3}

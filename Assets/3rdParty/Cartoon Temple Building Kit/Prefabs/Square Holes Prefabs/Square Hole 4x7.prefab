@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4000012132014472}
   - component: {fileID: 33000011243573082}
   - component: {fileID: 23000012909801686}
+  - component: {fileID: 6350029784366581661}
   m_Layer: 0
   m_Name: Square Hole 4x7
   m_TagString: Untagged
@@ -82,3 +83,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6350029784366581661
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000013654861282}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 9df7f4e590e0f4e48a616d998d522bb5, type: 3}

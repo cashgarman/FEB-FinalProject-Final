@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4000014259748920}
   - component: {fileID: 33000012290583596}
   - component: {fileID: 23000014087929844}
+  - component: {fileID: -6065508690847141575}
   m_Layer: 0
   m_Name: Round Wide 5
   m_TagString: Untagged
@@ -82,3 +83,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-6065508690847141575
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000014228038464}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: b96fc22b5d6a04c4595ede334a893196, type: 3}

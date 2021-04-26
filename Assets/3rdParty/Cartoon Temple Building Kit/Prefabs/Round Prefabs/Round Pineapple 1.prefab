@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4000012643783990}
   - component: {fileID: 33000011437961418}
   - component: {fileID: 23000013833655660}
+  - component: {fileID: -7462130213452446638}
   m_Layer: 0
   m_Name: Round Pineapple 1
   m_TagString: Untagged
@@ -82,3 +83,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-7462130213452446638
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000012574637910}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: a5d3b3583b5ef3741bec2a2594838bec, type: 3}
