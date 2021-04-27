@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 547930949781597973}
   - component: {fileID: 547930949781597974}
   - component: {fileID: 547930949781597975}
-  - component: {fileID: 547930949781597968}
   - component: {fileID: 547930949781597969}
   - component: {fileID: 547930949781597972}
   - component: {fileID: 965738523}
-  m_Layer: 6
+  - component: {fileID: 1805274518}
+  m_Layer: 2
   m_Name: Artifact
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 547930949781597970}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -17.5, y: 0.65, z: -7.25}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -43,7 +43,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 547930949781597970}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 4300000, guid: d016cee24d2ccd84b958319ab3fcf57e, type: 3}
 --- !u!23 &547930949781597975
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5883e7fc28511e04980dc811efb55341, type: 2}
+  - {fileID: 2100000, guid: cd6706c4eb649ac46a2bce773466b9a6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -86,19 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &547930949781597968
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 547930949781597970}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &547930949781597969
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -142,3 +129,17 @@ MonoBehaviour:
   touchedColour: {r: 1, g: 0.87771446, b: 0, a: 1}
   numVelocitySamples: 10
   throwBoost: 75
+--- !u!64 &1805274518
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547930949781597970}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: d016cee24d2ccd84b958319ab3fcf57e, type: 3}

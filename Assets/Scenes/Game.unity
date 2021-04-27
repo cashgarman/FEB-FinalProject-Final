@@ -1123,7 +1123,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 413994082}
   m_LocalRotation: {x: -0, y: -0.70710707, z: -0, w: 0.7071066}
-  m_LocalPosition: {x: -10.249989, y: 0, z: -7.5000024}
+  m_LocalPosition: {x: -22.500008, y: 2, z: 15.74999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 522288641}
@@ -1397,25 +1397,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53132b79196544748a3dff11adbe5a7f, type: 3}
---- !u!1 &717103471 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1000012555408854, guid: 53132b79196544748a3dff11adbe5a7f, type: 3}
-  m_PrefabInstance: {fileID: 717103470}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &717103472
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 717103471}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: d7af30de4eca02e4482f299d6969a552, type: 3}
 --- !u!1001 &810840305
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1489,25 +1470,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eab0075fe70674445a3927fe54cb1a6b, type: 3}
---- !u!1 &810840306 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1000014155928884, guid: eab0075fe70674445a3927fe54cb1a6b, type: 3}
-  m_PrefabInstance: {fileID: 810840305}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &810840307
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 810840306}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: a3ad31a1d09c4064ca4b8044cb9f4018, type: 3}
 --- !u!1 &891969125
 GameObject:
   m_ObjectHideFlags: 0
@@ -1966,6 +1928,9 @@ MonoBehaviour:
   stepDelay: 0.05
   _navMeshAgent: {fileID: 413994087}
   _player: {fileID: 413994086}
+  _raycastMask:
+    serializedVersion: 2
+    m_Bits: 59
 --- !u!114 &912987578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2338,7 +2303,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23962
+  m_Name: pb_Mesh32868
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

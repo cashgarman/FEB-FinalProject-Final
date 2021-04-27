@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
@@ -19,6 +18,7 @@ public class Robot : Agent
     [SerializeField] private Transform _holdPoint;
     [SerializeField] private GameObject _detectionIndicator;
     [SerializeField] private float _sightRange;
+    public AudioSource walkingSource;
 
     private Player player;
     private Animator animator;
@@ -37,6 +37,8 @@ public class Robot : Agent
 
     private bool ShouldPatrol => _waypoints.Any();
     private Waypoint CurrentWaypoint => _waypoints[_currentWaypointIndex];
+
+    public bool ChasingPlayer => currentState == State.ChasingPlayer;
 
     private void Start()
     {
@@ -81,8 +83,8 @@ public class Robot : Agent
         switch(state)
         {
             case State.Idle:
-                // Stop the walking animation
-                animator.SetBool("Walking", false);
+                StopWalking();
+                
                 break;
             case State.Patrolling:
                 // If this is not a patrolling robot
@@ -103,44 +105,45 @@ public class Robot : Agent
                 // Show the detection indicator above the robot's head
                 detectionIndicator.SetActive(true);
 
+                // Play the scanning sound on the robot
+                SoundController.PlaySound(gameObject, "robot_scan");
+
                 // Start the detection countdown
                 timeLeftUntilDetected = detectionTime;
                 break;
             case State.ChasingPlayer:
-                // Play the walking animation
-                animator.SetBool("Walking", true);
+                StartWalking();
+
+                // Play the engaging sound on the robot
+                SoundController.PlaySound(gameObject, "robot_engage");
+
                 break;
             case State.GrabbingArtifact:
-                // Play the walking animation
-                animator.SetBool("Walking", true);
-                
+                StartWalking();
+
                 // Move to the target artifact
                 navAgent.SetDestination(_targetArtifact.transform.position);
                 break;
             case State.ReturningArtifact:
-                // Play the walking animation
-                animator.SetBool("Walking", true);
-                
+                StartWalking();
+
                 // Move to the artifact's home
                 navAgent.SetDestination(_heldArtifact.homePosition);
                 break;
             case State.MoveToLastKnownPlayerPosition:
-                // Play the walking animation
-                animator.SetBool("Walking", true);
+                StartWalking();
 
                 // Move to the player's last known location
                 navAgent.SetDestination(lastKnownPlayerLocation);
                 break;
             case State.LookingForPlayer:
-                // Stop the walking animation
-                animator.SetBool("Walking", false);
+                StopWalking();
 
                 // Start the return home countdown
                 timeLeftUntilReturnHome = returnHomeTime;
                 break;
             case State.ReturningHome:
-                // Play the walking animation
-                animator.SetBool("Walking", true);
+                StartWalking();
 
                 // If this robot doesn't patrol
                 if (!ShouldPatrol)
@@ -175,10 +178,9 @@ public class Robot : Agent
         // TODO: Add ability for the robot to reverse direction back through the previous waypoints
         if (_currentWaypointIndex >= _waypoints.Length)
             _currentWaypointIndex = 0;
-        
-        // Play the walking animation
-        animator.SetBool("Walking", true);
-        
+
+        StartWalking();
+
         // Move to the next point
         navAgent.SetDestination(CurrentWaypoint.Position);
     }
@@ -342,9 +344,8 @@ public class Robot : Agent
     {
         // Start waiting at the current waypoint
         _waitingAtWaypoint = true;
-        
-        // Stop the walking animation
-        animator.SetBool("Walking", false);
+
+        StopWalking();
         
         // Wait for the appropriate amount of time at the current waypoint
         yield return new WaitForSeconds(CurrentWaypoint.WaitTime);
@@ -634,5 +635,17 @@ public class Robot : Agent
                 return;
             }
         }
+    }
+
+    private void StartWalking()
+    {
+        animator.SetBool("Walking", true);
+        walkingSource.Play();
+    }
+
+    private void StopWalking()
+    {
+        animator.SetBool("Walking", false);
+        walkingSource.Stop();
     }
 }

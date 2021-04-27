@@ -114,8 +114,7 @@ public class Teleporter : MonoBehaviour
             if (hasValidTeleportTarget)
             {
                 // Start the player moving down the first part of the path
-                NavMesh.CalculatePath(transform.position, teleportIndicator.transform.position, NavMesh.AllAreas,
-                    _pathToTarget);
+                NavMesh.CalculatePath(transform.position, teleportIndicator.transform.position, NavMesh.AllAreas, _pathToTarget);
                 _currentPathCornerIndex = 1;
                 moving = true;
                 stepCountdown = 0;

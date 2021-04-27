@@ -26,6 +26,28 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if(Input.GetKeyDown("1"))
+        {
+            SoundController.PlayMusic("MayanFireFlute_Ambient");
+        }
+        if (Input.GetKeyDown("2"))
+        {
+            SoundController.PlayMusic("MayanFireFlute_Action4x", 10f);
+        }
+
+        // If any robots are chasing the player
+        if(FindObjectsOfType<Robot>().Any(robot => robot.ChasingPlayer))
+        {
+            SoundController.PlayMusic("MayanFireFlute_Action4x", 10f);
+        }
+        else
+        {
+            SoundController.PlayMusic("MayanFireFlute_Ambient");
+        }
+    }
+
     internal static void OnArtifactStashed()
     {
        // If all of the artifacts are stashed

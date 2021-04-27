@@ -68,6 +68,9 @@ public class Player : MonoBehaviour
             _artifactGrabber.ForceDrop();
             _artifactGrabber = null;
 
+            // Play the artifact stashed sound
+            SoundController.PlaySound(gameObject, "artifact_stashed");
+
             // Let the game know an artifact was stashed
             GameManager.OnArtifactStashed();
         }
@@ -106,7 +109,10 @@ public class Player : MonoBehaviour
         _artifactGrabber = null;
         heldArtifact?.OnDropped();
         heldArtifact = null;
-        
+
+        // Play the stunned sound
+        SoundController.PlaySound(gameObject, "robot_stun");
+
         // Start the stunned countdown
         timeLeftStunned = stunnedDuration;
     }
